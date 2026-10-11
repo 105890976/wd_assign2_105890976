@@ -2,7 +2,7 @@
 Web Development Assignment 2 - Movie Discovery &amp; Ticket Booking Website
 
 ## Website structure
-**folder structure for reference**
+### Directory and File Organization
 ```
 wd_assign2_105890976
 ├─ index.html
@@ -23,6 +23,8 @@ wd_assign2_105890976
 │ └─ movies.json
 └─ Readme.txt
 ```
+### Site Architecture
+
 ## Mercury link
 
 ## GitHub repository link
@@ -77,10 +79,10 @@ Payment method:
 4. Sum all digits
 5. If total % 10 == 0 → the number is valid
 
-## Explanation of JavaScript favouriting logic
-- add to favourites list buttons on movies page
+## Explanation of JavaScript watchlist logic
+- add to watchlist list buttons on movies page
 - unique ids for each movie
-- html button `<button class="favourite-btn" data-id="<movie-id>">Add to favourites</button>`
+- html button `<button class="favourite-btn" data-id="<movie-id>">Add to watchlist</button>`
 - uses `localStorage` to maintain the selected movies when navigating
 ## Issues or limitations
 
