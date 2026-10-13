@@ -90,3 +90,6 @@ Payment method:
 https://en.wikipedia.org/wiki/Luhn_algorithm
 
 https://medium.com/@shishir-karki/how-credit-card-validation-works-luhn-algorithm-explained-for-engineers-cf6d6b998e41
+
+HTML countries drop down
+https://www.html-code-generator.com/drop-down/country-names

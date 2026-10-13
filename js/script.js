@@ -24,6 +24,17 @@ function closeNavAndRedirect(event) {
         location.href = link.href;
     }, 100);
 }
+
+// Registration Form Validation
+function validateRegister() {
+    return false;
+}
+
+// Booking Form Validation
+function validateBooking() {
+    return false;
+}
+
 // initialises html elements to correct event functions
 function init() {
     var hamburger = document.getElementById("hamburger-btn");
@@ -37,5 +48,7 @@ function init() {
         nav.onclick = closeNavAndRedirect;
     }
 }
+
+
 
 window.onload = init;
