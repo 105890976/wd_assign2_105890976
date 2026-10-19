@@ -69,7 +69,7 @@ footer {
     text-decoration: none;
     padding: 8px 16px;
     border-radius: 4px;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 500;
     white-space: nowrap;
     transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
@@ -114,6 +114,112 @@ footer {
 /* main content styling */
 main {
     padding-inline: 20px;
+}
+
+/* centers divs with class "centered" - have forms be centered */
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* form styling */
+.textinput {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+
+}
+.textinput label {
+    text-align: right;
+    width: 10em;
+    margin-right: 1em;
+    font-weight: bold;
+}
+
+.textinput input {
+    width: 50%;
+}
+
+/* Style radio button input using Flexbox */
+.radioinput {
+	display: flex;             
+	align-items: center;       
+	margin: 10px;               
+}
+
+/* Style the Gender label */
+.radiolabel {
+	text-align: right;        
+	width: 10em;               
+	margin-right: 1em;
+    font-weight: bold; 
+}
+
+/* Style radio buttons */
+.radioinput input {
+	width: 2em;                
+}
+
+/* Style radio labels */
+.radioinput label {
+	text-align: left;          
+	margin-right: 1em;         
+}
+
+/* */
+/* Style checkbox button input using Flexbox */
+.checkboxinput {
+	display: flex;             
+	align-items: flex-start;       
+	margin: 10px;               
+}
+
+/* Style the genre label */
+.checkboxlabel {
+	text-align: right;        
+	width: 10em;               
+	margin-right: 1em;        
+    flex-shrink: 0; 
+    font-weight: bold;
+}
+
+.genre-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 20px;
+    flex-grow: 1;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Style checkbox buttons */
+.checkbox-item input {
+    width: auto;
+    margin: 0;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+/* Style checkbox labels */
+.checkbox-item label {
+    width: 4em; 
+    text-align: left;          
+    margin: 0;      
+    cursor: pointer;   
+}
+
+/* Style the Country label  */
+.dropdowninput label {
+    text-align: right;
+    width: 10em;
+    margin-right: 1em;
+    font-weight: bold;
+    display: inline-block;
 }
 
 /* tablet and mobile styling, hamburger menu nav */

@@ -34,11 +34,116 @@
     </header> 
     <!-- Main content -->
     <main>
-        <!-- add classes and ids as nessesary -->
-        <section>
-            <h2>Welcome to Acinima</h2>
-            <p>Insert page-specific content here</p>
-        </section>
+        <div class="centered">
+            <section>
+                <h2>Book Tickets</h2>
+                <p>Book tickets for an upcoming movie showing</p>
+                <form id="form-book" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <div class="textinput">
+                            <label for="uname">First Name</label>
+                            <input id="fname" type="text" name="fname"/>
+                        </div>
+                        <div class="textinput">
+                            <label for="lname">Last Name</label>
+                            <input id="lname" type="text" name="lname"/>
+                        </div>
+                        <div class="textinput">
+                            <label for="email">Email</label>
+                            <input id="email" type="text" name="email"/>
+                        </div>
+                        <div class="textinput">
+                            <label for="phone">Phone Number</label>
+                            <input id="phone" type="text" name="phone"/>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Movie Details</legend>
+                        <div class="dropdowninput">
+                            <label for="movie">Movie Selection</label>
+                            <select id="movie" name="movie">
+                                <option value="">Select a movie</option>
+                                <option value="movie1">placeholder</option>
+                                <option value="movie2">placeholder</option>
+                                <option value="movie3">placeholder</option>
+                            </select>
+                        </div>
+                        <div class="textinput">
+                            <label for="screening-date">Screening Date & Time</label>
+                            <input type="datetime-local" id="screening-date" name="screening-date"/>
+                        </div>
+                        <div class="textinput">
+                            <label for="num-tickets">Number of Tickets</label>
+                            <input type="number" id="num-tickets" name="num-tickets" value="1"/>
+                        </div>
+                        <div class="dropdowninput">
+                            <label for="tickettype">Ticket Type</label>
+                            <select class="form-select" id="tickettype" name="tickettype">
+                                <option>Select Ticket</option>
+                                <option value="adult">Adult</option>
+                                <option value="child">Child</option>
+                                <option value="student">Student</option>
+                                <option value="senior">Senior</option>
+                            </select>
+                        </div>
+                        <div class="textinput">
+                            <label for="requests">Special requests</label>
+                            <textarea id="requests" name="requests" rows="3" cols="24" placeholder="Needs and requests"></textarea>
+                        </div>
+                        <div>
+                            <!-- display ticket price of selected ticket * amount of tickets -->
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Payment Information</legend>
+                        <div class="radioinput">
+                            <span class="radiolabel">Payment Method</span>
+
+                            <input id="voucher" type="radio" name="paymenttype" value="voucher" />
+                            <label for="voucher">Voucher</label>
+
+                            <input id="online" type="radio" name="paymenttype" value="online" />
+                            <label for="online">Online Payment</label>
+
+                        </div>
+                        <!-- payment detail fields are hidden until the associated option is picked -->
+                        <div class="vouchercontainer">
+                            <div class="textinput">
+                                <label for="vouchercode">Voucher Code</label>
+                                <input id="vouchercode" type="text" name="vouchercode"/>
+                            </div>
+                        </div>
+
+                        <div class="paymentcontainer">
+                            <div class="buttons">
+                                <button type="button" id="visamaster">Visa/Mastercard</button>
+                                <button type="button" id="amex">Amex</button>
+                            </div>
+                            <div class="textinput">
+                                <label for="cardnumber">Card Number</label>
+                                <input id="cardnumber" type="text" name="cardnumber"/>
+                            </div>
+                            <div class="buttons">
+                                <button type="button" id="aboveemail">Same as Email</button>
+                            </div>
+                            <div class="textinput">
+                                <label for="billemail">Billing Email Address</label>
+                                <input id="billemail" type="text" name="billemail"/>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Confirmation</legend>
+                        <div class="buttoninput">
+                            <input type="submit" value="Book Ticket(s)"/>
+                            <input type="reset" value="Cancel Booking"/>
+                        </div>
+                    </fieldset>
+                     
+                </form>
+            </section>
+        </div>
     </main>
     <footer>
         <p>&copy; 2026 Acinima. All rights reserved.</p>
