@@ -10,6 +10,12 @@ header {
     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
 
+html {
+    font-size: 18px;
+}
+legend {
+    font-weight: bold;
+}
 .logo {
     display: flex;
     align-items: center;
@@ -96,12 +102,13 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
-    height: 21px;
+    height: 20px;          
     background: transparent;
     border: none;
     cursor: pointer;
     padding: 0;
     z-index: 10;
+    margin: auto 0;      
 }
 
 .hamburger span {
@@ -240,6 +247,46 @@ main {
     width: 50%;
 }
 
+/* input styling */
+button, input[type="submit"], input[type="reset"]{
+    margin-top: auto; 
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    font-weight: bold;
+}
+
+/* text inputs, textareas, and dropdown select menus */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+input[type="datetime-local"],
+select,
+textarea {
+    padding: 10px 12px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+input[type="datetime-local"],
+select {
+    height: 42px; 
+}
+
+.buttoninput {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
 #vouchercontainer {
     display: none;	
 }
@@ -371,7 +418,7 @@ main {
         background-color: #101418;
         border-left: 2px solid rgba(255, 255, 255, 0.1);
         border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-        padding: 20px;
+        padding: 35px 20px 20px 20px;
         box-sizing: border-box;
         box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.3);
         transition: right 0.3s ease-in-out;

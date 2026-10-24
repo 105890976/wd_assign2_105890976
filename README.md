@@ -11,20 +11,24 @@ wd_assign2_105890976
 ├─ register.html
 ├─ booking.html
 ├─ watchlist.html
-├─ 
 ├─ css/
 │ └─ style.css
 ├─ js/
 │ └─ script.js
 ├─ images/
-│ ├─ 
-│ └─ 
+│ ├─ placeholer.jpg
+│ ├─ movie1.jpg
+│ └─ movie...
 ├─ data/
 │ └─ movies.json
-└─ Readme.txt
+└─ README.md
 ```
 ### Site Architecture
-
+- Home page that provides the user with info about the website.
+- User can navigate to any page from any page
+- User can go straight to the booking page from the movie or recommendations page by clicking book now
+- Movie panel info is displayed dynamically depending on screen size
+- Nav menu is displayed as a hamburger menu for easier navigation on smaller screens (tablets/phones)
 ## Mercury link
 
 ## GitHub repository link
@@ -46,7 +50,7 @@ wd_assign2_105890976
 Gender must be selected
 ```
 #### Explaination
-
+If statements that check each field against its requirements, giving the user a warning popup and preventing the form from being submitted if there is an error.
 
 ### Booking Form Validation
 ```
@@ -69,9 +73,11 @@ Payment method:
             American Express - starts with 34 or 37
 
 ```
-#### Explaination
-URL query parameter
 
+#### Explaination
+If statements that check each field against its requirements, giving the user a warning popup and preventing the form from being submitted if there is an error.
+
+Payment validation is only checked for the selected payment method. Online payment validation checks for a valid card value using the Luhn algorithm.
 
 **Luhn Algorithm Validator**
 1. Start from the rightmost digit (excluding the check digit)
@@ -80,31 +86,56 @@ URL query parameter
 4. Sum all digits
 5. If total % 10 == 0 → the number is valid
 
-## Explanation of JavaScript watchlist logic
-- add to watchlist list buttons on movies page
-- unique ids for each movie
-- html button `<button class="favourite-btn" data-id="<movie-id>">Add to watchlist</button>`
-- uses `localStorage` to maintain the selected movies when navigating
+URL query parameter used to automatically fill in the booking page movie with the movie that the user has selected
+
 ## Issues or limitations
 
+Limited by available time to complete the watchlist page
+
+No backend database for user accounts
+
+
 ## References change to harvard
-https://en.wikipedia.org/wiki/Luhn_algorithm
+Wikipedia Contributors (2019). Luhn algorithm. [online] Wikipedia. Available at: https://en.wikipedia.org/wiki/Luhn_algorithm [Accessed 24 Oct. 2026].
 
-https://medium.com/@shishir-karki/how-credit-card-validation-works-luhn-algorithm-explained-for-engineers-cf6d6b998e41
+Karki, S. (2026). How Credit Card Validation Works (Luhn algorithm explained for engineers). [online] Medium. Available at: https://medium.com/@shishir-karki/how-credit-card-validation-works-luhn-algorithm-explained-for-engineers-cf6d6b998e41 [Accessed 24 Oct. 2026].
 
-HTML countries drop down
-https://www.html-code-generator.com/drop-down/country-names
+HTML Code Generator. (2025). HTML country select drop-down list. [online] Available at: https://www.html-code-generator.com/drop-down/country-names [Accessed 24 Oct. 2026].
 
-movie sources
-arriety
-https://www.imdb.com/title/tt1568921/
-ghost in the shell
-https://www.imdb.com/title/tt0113568
-iron lung
-https://www.imdb.com/title/tt27564844/
-project hail mary
-https://www.imdb.com/title/tt12042730
-alien
-https://www.imdb.com/title/tt0078748/
-the room
-https://www.imdb.com/title/tt0368226/
+**movie sources**
+
+**arriety**
+
+Yonebayashi, H., Norton, M., Miyazaki, H., Niwa, K., Poehler, A., Arnett, W. and Shida, M. (2012). Karigurashi no arietty. [online] IMDb. Available at: https://www.imdb.com/title/tt1568921/ [Accessed 24 Oct. 2026].
+
+https://static.wikia.nocookie.net/studio-ghibli/images/f/f7/The_Secret_World_of_Arrietty.jpg/revision/latest?cb=20210306220734
+
+**ghost in the shell**
+
+Shirow Masamune and Kazunori Itô (1995). Kôkaku Kidôtai. [online] IMDb. Available at: https://www.imdb.com/title/tt0113568/ [Accessed 24 Oct. 2026].
+
+https://m.media-amazon.com/images/M/MV5BNzljMjA3MTQtMjM1OS00OGJjLWJiYzctZDRiMTk1NWI5YzQ5XkEyXkFqcGc@._V1_.jpg
+
+**iron lung**
+
+Fischbach, M., Fischbach, M., Szymanski, D., Fischbach, M., LaMont, E. and McLoughlin, S. (n.d.). Iron lung. [online] IMDb. Available at: https://www.imdb.com/title/tt27564844/ [Accessed 24 Oct. 2026].
+
+https://www.theparktheatre.ca/wp-content/uploads/2026/01/fzNMAKLZrvQ1ojX59pSvrvlN5XW.jpg
+
+**project hail mary**
+
+Goddard, D. and Weir, A. (2026). Project Hail Mary. [online] IMDb. Available at: https://www.imdb.com/title/tt12042730/ [Accessed 24 Oct. 2026].
+
+https://image.tmdb.org/t/p/w220_and_h330_face/iOb2fjXLbpJgyQXe46n1WtGCnaa.jpg
+
+**alien**
+
+O’Bannon, D., Shusett, R. and O’Bannon, D. (1979). Alien. [online] IMDb. Available at: https://www.imdb.com/title/tt0078748/ [Accessed 24 Oct. 2026].
+
+https://images.photowall.com/products/59754/alien.jpg
+
+**the room**
+
+Wiseau, T. (2004). The room. [online] IMDb. Available at: https://www.imdb.com/title/tt0368226/ [Accessed 24 Oct. 2026].
+
+https://www.theroommovie.com/roompics/posterb.jpg
