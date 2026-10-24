@@ -30,7 +30,7 @@ wd_assign2_105890976
 - Movie panel info is displayed dynamically depending on screen size
 - Nav menu is displayed as a hamburger menu for easier navigation on smaller screens (tablets/phones)
 ## Mercury link
-
+https://mercury.swin.edu.au/cos10005/s105890976/wd_assign2/wd_assign2_105890976/index.html
 ## GitHub repository link
 [wd_assign2_105890976](https://github.com/105890976/wd_assign2_105890976)
 
