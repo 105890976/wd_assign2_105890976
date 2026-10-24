@@ -104,6 +104,14 @@ HTML Code Generator. (2025). HTML country select drop-down list. [online] Availa
 
 **movie sources**
 
+**icon source**
+
+https://png.pngtree.com/png-vector/20230910/ourmid/pngtree-movie-reel-illustration-icon-vector-png-image_10043258.png
+
+**index page image source**
+
+https://png.pngtree.com/png-clipart/20230917/original/pngtree-film-and-entertainment-concept-art-graphic-design-vector-png-image_12282472.png
+
 **arriety**
 
 Yonebayashi, H., Norton, M., Miyazaki, H., Niwa, K., Poehler, A., Arnett, W. and Shida, M. (2012). Karigurashi no arietty. [online] IMDb. Available at: https://www.imdb.com/title/tt1568921/ [Accessed 24 Oct. 2026].
