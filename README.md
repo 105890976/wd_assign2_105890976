@@ -89,11 +89,14 @@ Payment validation is only checked for the selected payment method. Online payme
 URL query parameter used to automatically fill in the booking page movie with the movie that the user has selected
 
 ## Issues or limitations
+**Limitations**
 
 Limited by available time to complete the watchlist page
 
 No backend database for user accounts
+**Issues**
 
+When selecting a movie from the Movies or Recommended page, the price for the tickets is not automatically updated, and will nto update until the ticket amount or type is changed. Since the user must at least select a ticket type, the price will update eventually
 
 ## References change to harvard
 Wikipedia Contributors (2019). Luhn algorithm. [online] Wikipedia. Available at: https://en.wikipedia.org/wiki/Luhn_algorithm [Accessed 24 Oct. 2026].
