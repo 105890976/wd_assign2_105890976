@@ -70,6 +70,7 @@ Payment method:
 
 ```
 #### Explaination
+URL query parameter
 
 
 **Luhn Algorithm Validator**
@@ -93,3 +94,17 @@ https://medium.com/@shishir-karki/how-credit-card-validation-works-luhn-algorith
 
 HTML countries drop down
 https://www.html-code-generator.com/drop-down/country-names
+
+movie sources
+arriety
+https://www.imdb.com/title/tt1568921/
+ghost in the shell
+https://www.imdb.com/title/tt0113568
+iron lung
+https://www.imdb.com/title/tt27564844/
+project hail mary
+https://www.imdb.com/title/tt12042730
+alien
+https://www.imdb.com/title/tt0078748/
+the room
+https://www.imdb.com/title/tt0368226/

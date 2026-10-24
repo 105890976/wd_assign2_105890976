@@ -1,0 +1,80 @@
+[
+    {
+        "id": "movie1",
+        "title": "The Secret World of Arrietty",
+        "genre": "Adventure",
+        "ageRating": "G",
+        "runningTime": "94 mins",
+        "description": "The Clock family consists of three four-inch-tall people who live incognito among humans, borrowing only what they need to survive. Their quiet life changes when their teenage daughter, Arrietty, is discovered.",
+        "price": 18.50,
+        "screening": "Sat 7:00 PM, Sun 4:00 PM",
+        "poster": "images/movie1.jpg",
+        "ageGroup": ["Family"],
+        "viewing": ["Family", "Friends", "Solo"]
+    },
+    {
+        "id": "movie2",
+        "title": "Ghost in the Shell (1995)",
+        "genre": "Si-fi",
+        "ageRating": "M",
+        "runningTime": "83 mins",
+        "description": "A cyborg policewoman and her partner hunt a mysterious and powerful hacker called the Puppet Master.",
+        "price": 18.50,
+        "screening": "Wed 6:00 PM, Thur 5:00 PM",
+        "poster": "images/movie2.jpg",
+        "ageGroup": ["Adult"],
+        "viewing": ["Friends", "Solo"]       
+    },
+    {
+        "id": "movie3",
+        "title": "Iron Lung",
+        "genre": "Horror",
+        "ageRating": "R",
+        "runningTime": "125 mins",
+        "description": "In a post-apocalyptic future after 'The Quiet Rapture' event, a convict explores a blood ocean on a desolate moon using a submarine called the 'Iron Lung' to search for missing stars/planets.",
+        "price": 15,
+        "screening": "Mon 3:00 PM",
+        "poster": "images/movie3.jpg",
+        "ageGroup": ["Adult"],
+        "viewing": ["Friends", "Solo"]          
+    },
+    {
+        "id": "movie4",
+        "title": "Project Hail Mary",
+        "genre": "Si-fi",
+        "ageRating": "PG",
+        "runningTime": "153 mins",
+        "description": "A science teacher wakes up alone on a spaceship. As his memory returns, he uncovers a mission to stop a mysterious substance killing Earth's sun, and realizes that an unexpected friendship may be the key.",
+        "price": 11.91,
+        "screening": "Mon 3:00 PM",
+        "poster": "images/movie4.jpg",
+        "ageGroup": ["Child", "Teen", "Adult"],
+        "viewing": ["Family", "Date Night", "Friends", "Solo"]   
+    },
+    {
+        "id": "movie5",
+        "title": "Alien",
+        "genre": "Horror",
+        "ageRating": "R",
+        "runningTime": "117 mins",
+        "description": "After investigating a mysterious transmission of unknown origin, the crew of a commercial spacecraft encounters a deadly lifeform.",
+        "price": 19.97,
+        "screening": "Fri 3:00 PM",
+        "poster": "images/movie5.jpg",
+        "ageGroup": ["Adult"],
+        "viewing": ["Date Night", "Friends", "Solo"]          
+    },
+    {
+        "id": "movie6",
+        "title": "The Room",
+        "genre": "Drama",
+        "ageRating": "R",
+        "runningTime": "99 mins",
+        "description": "In San Francisco, an amiable banker's seemingly perfect life is turned upside down when his deceitful bride-to-be embarks on a passionate affair with his best friend.",
+        "price": 3.6,
+        "screening": "Tue 6:00 AM",
+        "poster": "images/movie6.jpg",
+        "ageGroup": ["Adult"],
+        "viewing": ["Date Night", "Friends", "Solo"]         
+    }
+]

@@ -42,7 +42,7 @@
                     <fieldset>
                         <legend>Personal Information</legend>
                         <div class="textinput">
-                            <label for="uname">First Name</label>
+                            <label for="fname">First Name</label>
                             <input id="fname" type="text" name="fname"/>
                         </div>
                         <div class="textinput">
@@ -64,9 +64,6 @@
                             <label for="movie">Movie Selection</label>
                             <select id="movie" name="movie">
                                 <option value="">Select a movie</option>
-                                <option value="movie1">placeholder</option>
-                                <option value="movie2">placeholder</option>
-                                <option value="movie3">placeholder</option>
                             </select>
                         </div>
                         <div class="textinput">
@@ -80,7 +77,7 @@
                         <div class="dropdowninput">
                             <label for="tickettype">Ticket Type</label>
                             <select class="form-select" id="tickettype" name="tickettype">
-                                <option>Select Ticket</option>
+                                <option value="">Select Ticket</option>
                                 <option value="adult">Adult</option>
                                 <option value="child">Child</option>
                                 <option value="student">Student</option>
@@ -91,41 +88,46 @@
                             <label for="requests">Special requests</label>
                             <textarea id="requests" name="requests" rows="3" cols="24" placeholder="Needs and requests"></textarea>
                         </div>
-                        <div>
-                            <!-- display ticket price of selected ticket * amount of tickets -->
+                        <div class="textinput">
+                            <label for="total-price">Total Price</label>
+                            <input id="total-price" type="text" name="total-price" readonly value="$0.00"/>
                         </div>
                     </fieldset>
                     <fieldset>
                         <legend>Payment Information</legend>
-                        <div class="radioinput">
-                            <span class="radiolabel">Payment Method</span>
-
-                            <input id="voucher" type="radio" name="paymenttype" value="voucher" />
-                            <label for="voucher">Voucher</label>
-
-                            <input id="online" type="radio" name="paymenttype" value="online" />
-                            <label for="online">Online Payment</label>
-
+                        <div class="payment-row">
+                            <span class="payment-label">Payment Method</span>
+                            <div class="buttons">
+                                <button type="button" id="voucher">Voucher</button>
+                                <button type="button" id="card">Online Payment</button>
+                            </div>
                         </div>
+                        
                         <!-- payment detail fields are hidden until the associated option is picked -->
-                        <div class="vouchercontainer">
+                        <div id="vouchercontainer">
                             <div class="textinput">
                                 <label for="vouchercode">Voucher Code</label>
-                                <input id="vouchercode" type="text" name="vouchercode"/>
+                                <input id="vouchercode" type="text" name="vouchercode" placeholder="xxxx xxxx xxxx"/>
                             </div>
                         </div>
 
-                        <div class="paymentcontainer">
-                            <div class="buttons">
-                                <button type="button" id="visamaster">Visa/Mastercard</button>
-                                <button type="button" id="amex">Amex</button>
+                        <div id="paymentcontainer">
+                            <div class="payment-row">
+                                <span class="payment-label">Card Type</span>
+                                <div class="buttons">
+                                    <button type="button" id="visamaster">Visa/Mastercard</button>
+                                    <button type="button" id="amex">Amex</button>
+                                </div>
                             </div>
                             <div class="textinput">
                                 <label for="cardnumber">Card Number</label>
                                 <input id="cardnumber" type="text" name="cardnumber"/>
                             </div>
-                            <div class="buttons">
-                                <button type="button" id="aboveemail">Same as Email</button>
+                            <div class="payment-row">
+                                <span class="payment-label"></span>
+                                <div class="buttons">
+                                    <button type="button" id="aboveemail">Same as Email</button>
+                                </div>
                             </div>
                             <div class="textinput">
                                 <label for="billemail">Billing Email Address</label>
