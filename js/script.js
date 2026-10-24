@@ -333,7 +333,7 @@ function luhnvalid(cardnum) {
     // loops though the card number, starting from the end 
     for (var i = cardnum.length - 1; i >= 0; i--) {
         // converts i-th element in the cardnum string to a decimal value
-        var digit = parseInt(cardnum.charAt(i), 10)
+        var digit = parseInt(cardnum.charAt(i), 10);
 
         if (doubleSecond) {
             digit *= 2;
@@ -514,7 +514,7 @@ function gotobooking(movieId) {
 }
 
 function setupbooking() {
-    var selectedMovie = document.getElementById("movie")
+    var selectedMovie = document.getElementById("movie");
     if (!selectedMovie) {
         return;
     }
@@ -595,7 +595,7 @@ function init() {
         amexbtn.onclick = amexcardtype;
     }
 
-    var sameemailbtn = document.getElementById("aboveemail")
+    var sameemailbtn = document.getElementById("aboveemail");
     if (sameemailbtn) {
         sameemailbtn.onclick = copyemail;
     }
