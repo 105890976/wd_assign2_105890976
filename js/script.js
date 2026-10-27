@@ -345,6 +345,8 @@ function luhnvalid(cardnum) {
         sum += digit;
         doubleSecond = !doubleSecond;
     }
+    // was missing this line in submitted code
+    return sum % 10 === 0;
 } 
 
 // loading movies.json file
